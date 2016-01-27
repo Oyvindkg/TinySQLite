@@ -12,6 +12,8 @@ import sqlite3
 /** Valid SQLite types are marked using the 'SQLiteValue' protocol */
 public protocol SQLiteValue {}
 
+extension NSArray: SQLiteValue {}
+extension NSDictionary: SQLiteValue {}
 extension String: SQLiteValue {}
 extension NSString: SQLiteValue {}
 extension Character: SQLiteValue {}
